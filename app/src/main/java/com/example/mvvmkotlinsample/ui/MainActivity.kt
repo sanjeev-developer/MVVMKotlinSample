@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         println("newvalue : ${normalClass.xyz}")
         println("mainViewModel : ${mainViewModel.abc}")
 
-        //this is a pull test
+        //this is a conflict test
        //communication between fragment
         // The nicest way is to use a shared ViewModel.
        viewModel.recieveData("Pacafista")
