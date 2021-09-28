@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.mvvmkotlinsample.models.NewsData" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.articles.get(0).title.toString()}" />
+
+        <TextView
+            android:id="@+id/txt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.articles.get(1).title.toString()}" />
+
+        <TextView
+            android:id="@+id/txt_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.articles.get(2).title.toString()}" />
+
+        <TextView
+            android:id="@+id/txt_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.articles.get(3).title.toString()}" />
+
+    </LinearLayout>
+</layout>
